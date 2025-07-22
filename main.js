@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Response data: ", data);
       //if(!data.length)
       if (data.length === 0) {
-        outputDiv.textContent = "No user data found."; //if no data is found, display No user data found ???????????????????
+        outputDiv.textContent = "No user data found."; //if no data is found, display No user data found
       }
 
       const fullNames = data.map(
