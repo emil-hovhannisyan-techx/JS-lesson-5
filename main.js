@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error(`There was a HTTP Error! Status: ${response.status}`);
       }
       const { data = [] } = (await response.json()) || {}; //parsing the response data to JSON
-      await new Promise((resolve) => setTimeout(resolve, 1000)); //simulating a delay of 3 seconds
+      await new Promise((resolve) => setTimeout(resolve, 1000)); //simulating a delay of N seconds
 
       console.log("Response data: ", data);
       //if(!data.length)
