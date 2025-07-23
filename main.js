@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //if(!data.length)
       if (data.length === 0) {
         outputDiv.textContent = "No user data found."; //if no data is found, display No user data found
+        return;
       }
 
       const fullNames = data.map(
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       //catching errors
       console.error("Error fetching user data:", error);
-      outputDiv.textContent = "Error fetching user data.";
+      outputDiv.textContent = "No User found";
     }
   }
 
